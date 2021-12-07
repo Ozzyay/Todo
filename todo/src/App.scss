@@ -1,0 +1,46 @@
+@import "./variables.module";
+
+.main {
+  margin-inline: 2rem;
+  display: inline-grid;
+  grid-template-columns: repeat(2, 2fr);
+  width: calc(100% - 4rem);
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  grid-gap: 1.5rem;
+}
+
+@media (min-width: 850px) {
+  .main {
+    grid-gap: 3rem;
+  }
+}
+
+.button {
+  font-family: "Comfortaa", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  background-color: $comp-color;
+  outline: 0;
+  border: 0;
+  border-radius: 8px;
+  width: 10rem;
+  height: 2rem;
+  box-shadow: 0px 0.3rem 1rem rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(103, 177, 248, 0.3);
+  color: $text-color;
+}
+
+.button:hover {
+  background-color: #a7ceea;
+  border: 2px solid rgba(103, 177, 248, 1);
+}
+
+.btn--container {
+  width: 100%;
+  display: flex;
+  margin-top: 1rem;
+  justify-content: center;
+}

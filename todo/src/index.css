@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Comfortaa", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4dfd0;
+}
+
+#modal-root {
+  z-index: 100;
+  width: auto;
+  height: auto;
+}
+
+#backdrop-root {
+  z-index: 1;
+}

@@ -1,0 +1,59 @@
+@import "../../variables.module";
+.cont {
+  z-index: 100;
+  width: auto;
+  max-width: 200px;
+  position: fixed;
+  top: 20%;
+  left: calc(50% - 116px);
+  background-color: #98cafa;
+  gap: 0.4rem;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  border: 3px solid rgba(103, 177, 248, 0.3);
+  box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.cont form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: $text-color;
+  align-items: center;
+}
+.cont form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.cont form button {
+  font-family: "Comfortaa";
+  font-weight: 700;
+  color: $text-color;
+  border-radius: 8px;
+  outline: 0;
+  border: 0;
+  width: 50%;
+  height: 2rem;
+  border: 1px solid black;
+}
+
+.cont form button:hover {
+  background-color: #f4dfd0;
+}
+
+.title {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  height: 1.5rem;
+}
+
+.desc {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  height: 1.5rem;
+}
+
+.title:focus,
+.desc:focus {
+  outline: 1px solid $base-color;
+  box-shadow: 0px 0px 12px $base-color;
+}
